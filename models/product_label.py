@@ -2,7 +2,7 @@
 
 from odoo import models, fields
 
-class ProductLabelLayout(models.Model):
+class ProductLabelLayout(models.TransientModel):
     _inherit = 'product.label.layout'
 
     print_format = fields.Selection(selection_add=[
