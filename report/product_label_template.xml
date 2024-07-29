@@ -1,0 +1,20 @@
+<!-- report/product_label_template.xml -->
+
+<odoo>
+    <data>
+        <template id="report_product_label_hexagon">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="product">
+                    <div class="page">
+                        <h2><t t-esc="product.name"/></h2>
+                        <p><strong>Ancho:</strong> <t t-esc="product.ancho"/></p>
+                        <p><strong>Gramaje:</strong> <t t-esc="product.gramaje"/></p>
+                        <p><strong>Tipo:</strong> <t t-esc="product.tipo"/></p>
+                        <p><strong>Kilos:</strong> <t t-esc="product.kilos"/></p>
+                        <p><strong>Folio:</strong> <t t-esc="product.folio"/></p>
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
