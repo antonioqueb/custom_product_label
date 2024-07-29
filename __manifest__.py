@@ -2,7 +2,7 @@
 
 {
     'name': 'Custom Product Label',
-    'version': '1.0',
+    'version': '1.1',
     'depends': ['base', 'product'],
     'data': [
         'report/product_label_template.xml',
